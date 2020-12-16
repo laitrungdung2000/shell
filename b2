@@ -1,0 +1,13 @@
+
+while :
+do
+  for f in *;
+  do
+    echo $f
+    if grep -q "khung bo" $f;  then
+	echo "Co khung bo"
+	echo $f
+    fi;
+  done
+  sleep 6
+done
