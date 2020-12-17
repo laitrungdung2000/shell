@@ -21,7 +21,7 @@ long int findSize(char file_name[])
 	long int res = ftell(fp); 
 
 	// closing the file 
-	fclose(fp); 
+	fclose(fp);
 
 	return res; 
 } 
@@ -43,7 +43,7 @@ int main()
     		if (stats.st_mode & X_OK)
         		printf("execute");
 	}
-	long int res = findSize(file_name); 
+	long int res = findSize(file_name);
 	if (res != -1) 
 		printf("Size of the file is %ld bytes \n", res);
 	
